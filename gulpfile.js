@@ -74,8 +74,10 @@ gulp.task('js', function() {
 	return gulp.src([
 		// 'dist/libs/jquery/dist/jquery.min.js',
 		// 'dist/libs/ion.rangeSlider/js/ion.rangeSlider.min.js',
-		'dist/libs/slick-carousel/slick/slick.min.js',
+		'src/libs/jquery/dist/jquery.min.js',
 		'src/js/libs/scripts.min.js',
+		'src/js/libs/slick-carousel/slick/slick.min.js',
+		
 		'src/js/libs/ion.rangeSlider.js',
 		'src/js/common.js', // Always at the end
 		])

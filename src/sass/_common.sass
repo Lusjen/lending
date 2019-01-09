@@ -64,12 +64,13 @@
 	align-items: stretch
 	max-width: 1804px
 	margin: 0 auto
+	position: relative
 	&__reverse
 		flex-direction: row-reverse
 	&__info
 		width: 37%
 		background-color: #3d4c62
-		padding: 40px 100px 54px
+		padding: 40px 100px 60px
 	&__img
 		width: 63%
 		// background: url('../img/new_york.png')
@@ -113,9 +114,9 @@
 
 .title-gray
 	color: #3d4c62
+
 .title-lg-hide
 	display: none
-
 
 .img-infra
 	position: relative
@@ -195,7 +196,6 @@
 			min-height: 100%
 			object-fit: cover
 
-
 .btn
 	display: block
 	border-radius: 50%
@@ -258,3 +258,74 @@
 		display: block
 	.title-lg-show
 		display: none
+
+
+.popap
+	opacity: 0
+	visibility: hidden
+	position: absolute
+	background: rgba(0,0,0,0.95)
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+	z-index: 20
+	margin:  0 auto 
+	padding: 0 102px
+	transition:  all 0.3s
+	&.open
+		opacity: 1
+		visibility: visible
+	&__inner
+		position: relative
+		
+.gallery
+	margin: 0 auto
+	max-width: 928px
+	&__btn
+		padding: 22px 0
+		margin: 0 auto 
+		display: flex
+		justify-content: space-between
+	&__btn-center
+		width: 272px
+	&__btn-prev, 
+	&__btn-next
+		display: flex
+		align-items: center
+		text-transform: uppercase
+		font-size: 16px
+		font-weight: 300
+		color: #ffffff
+		cursor: pointer 
+	&__btn-prev img
+		margin-right: 16px
+	&__btn-next img
+		margin-left: 16px
+
+.btn-plan
+	border-radius: 23px
+	border: 2px solid #ffffff
+	text-align: center
+	width: 100%
+	padding: 25px 0
+	display: inline-block
+	text-decoration: none
+	color: #ffffff
+	text-transform: uppercase
+	font-size: 16px
+	font-weight: 300
+
+.btn-close
+	width: 48px
+	height: 48px
+	border: 1px solid #ffffff
+	border-radius: 50%
+	position: absolute
+	top: 26px
+	right: 0
+	img
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)

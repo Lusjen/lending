@@ -13,9 +13,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
 	<!-- Template Basic Images Start -->
-	<meta property="og:image" content="path/to/image.jpg">
+	<!-- <meta property="og:image" content="path/to/image.jpg">
 	<link rel="icon" href="img/favicon/favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png"> -->
 	<!-- Template Basic Images End -->
 	
 	<!-- Custom Browsers Color Start -->
@@ -32,6 +32,8 @@
 	<div class="block-logo">
 		
 	</div>
+
+	<!-- begin block -->
 	<div class="block">
 		<div class="block__info info">
 			<h2 class="info__title title-lg-show"><span class="title-big">NEW YORK</span> Concept House</h2>
@@ -113,8 +115,42 @@
 		<div class="info__title-tablet title-lg-hide">
 			<h2 class="info__title title-gray"><span class="title-big">NEW YORK</span> Concept House</h2>
 		</div>
-		
+		<!-- begin popap -->
+		<div class="popap">
+			<div class="popap__inner">
+				<div class="gallery">
+					<div class="gallery__item">
+						<img src="img/gallery-chicago.png" alt="">
+					</div>
+					<div class="gallery__item">
+						<img src="img/gallery-chicago.png" alt="">
+					</div>
+					<div class="gallery__item">
+						<img src="img/gallery-chicago.png" alt="">
+					</div>
+				</div>
+				<div class="gallery__btn">
+					<div class="gallery__btn-prev">
+						<img src="img/prev-arrov.svg" alt="arrow">Попереднє фото
+					</div>
+					<div class="gallery__btn-center">
+						<a href="#" class="btn-plan">Планування шахматка</a>
+					</div>
+					<div class="gallery__btn-next">
+						Наступне фото<img src="img/next-arrow.svg" alt="arrow">
+					</div>
+				</div>
+				<div class="popap__close">
+					<a href="#" class="btn-close">
+						<img src="img/close.svg" alt="close">
+					</a>
+				</div>
+			</div>
+			
+		</div>
+		<!-- end popap -->
 	</div>
+	<!-- end block -->
 
 	<!-- begin block -->
 		<div class="block block__reverse">
@@ -171,7 +207,6 @@
 						Адреса:<span class="info__item-value">вул. Антоновича, 74, Голосіївський район</span>
 					</li>
 				</ul>
-
 			</div>
 			<div class="block__img img-infra">
 				<div class="img-infra__text img-infra__text_reverse">введено в експлуатацію</div>
@@ -199,10 +234,11 @@
 			</div>
 		</div>
 	<!-- end block -->
-
 	
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-	<!-- <script src="js/scripts.min.js"></script> -->
-
+	 <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+	
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
+	<script src="js/scripts.min.js"></script>
+	
 </body>
 </html>
