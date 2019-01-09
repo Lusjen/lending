@@ -20,7 +20,7 @@ var gulp          			= require('gulp'),
 
 gulp.task('browser-sync', function() {
 	browserSync.init({
-		proxy: "Saga/dist",
+		proxy: "lending/dist",
 		notify: false
 		// open: false,
 		// online: false, // Work Offline Without Internet Connection
