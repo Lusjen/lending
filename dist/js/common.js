@@ -15,7 +15,7 @@
 
 
     markers1 = [
-                	['0', '', 50.433613, 30.513188, 'жк', 'img/chicago-icon.png', 'Детальніше про CHICAGO CENTRAL HOUSE'],
+                	['0', '', 50.433613, 30.513188, 'жк', 'img/chicago-icon.png', 'Детальніше про<br> CHICAGO CENTRAL HOUSE'],
                 	['1', '', 50.434959, 30.508573, 'жк', 'img/resident-icon.png', 'Детальніше про Resident'],
                 	['2', '', 50.426528, 30.514185, 'жк', 'img/new-york-icon.png', 'Детальніше про New York'],
                 	['3', '', 50.407029, 30.507624, 'жк', 'img/bristol-icon.png', 'Детальніше про Bristol'],

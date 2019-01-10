@@ -4,7 +4,16 @@ $(function() {
 	// Custom JS
 		$('.gallery').slick({
 			infinite: true,
-			arrows: false
+			arrows: false,
+			responsive: [
+		                    {
+		                      breakpoint: 1200,
+		                      settings: {
+		                        dots: true
+		                        // slidesToScroll: 1
+		                      }
+		                    }
+		                  ]
 		});
 		$('.gallery__btn-prev').on('click', function(){
 			$('.gallery').slick('slickPrev');

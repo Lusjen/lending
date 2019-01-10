@@ -56,57 +56,28 @@
 		<div class="block__info info">
 			<h2 class="info__title title-lg-show"><span class="title-big">NEW YORK</span> Concept House</h2>
 			<h3 class="info__subtitle">АМЕРИКАНСЬКА ЯКІСТЬ. УКРАЇНСЬКА ЦІНА.</h3>
-			<p class="info__description">NEW YORK Concept House — це можливість дотримуватися американського стилю життя в самому центрі Києва.</p>
-			<ul class="info__list">
-				<li class="info__item">Унікальна архітектура</li>
-				<li class="info__item">Консьєрж-сервіс</li>
-				<li class="info__item">Розвинена інфраструктура навколо будинку</li>
-				<li class="info__item">Система «Розумний будинок»</li>
-				<li class="info__item">Зручна транспортна розв’язка</li>
-				<li class="info__item">Квартири з терасами</li>
-			</ul>
-			<ul class="info__list-house">
-				<li class="info__item-house">
-					Клас житла:<span class="info__item-value"> бізнес + </span>
-				</li>
-				<li class="info__item-house">
-					Кількість поверхів:<span class="info__item-value">22</span>
-				</li>
-				<li class="info__item-house">
-					Кількість квартир:<span class="info__item-value">225</span>
-				</li>
-				<li class="info__item-house">
-					Кількість паркомісць:<span class="info__item-value">21</span>
-				</li>
-			</ul>
-			<ul class="info__list-house">
-				<li class="info__item-house">
-					Загальна площа <br> комерційних приміщень: <span class="info__item-value">1 610,68 м2</span>
-				</li>
-			</ul>
-			<ul class="info__list-house">
-				<li class="info__item-house">
-					Площі квартир:
-				</li>
-				<li class="info__item-house">
-					1-к:<span class="info__item-value">41 – 59 м2</span>
-				</li>
-				<li class="info__item-house">
-					2-к:<span class="info__item-value">89,6 м2</span>
-				</li>
-				<li class="info__item-house">
-					3-к:<span class="info__item-value">91 – 163,5 м2</span>
-				</li>
-				<li class="info__item-house">
-					Пентхауси:<span class="info__item-value"> 87,4 – 204 м2</span>
-				</li>
-			</ul>
-			<ul class="info__list-house">
-				<li class="info__item-house">
-					Адреса:<span class="info__item-value">вул. Антоновича, 74, Голосіївський район</span>
-				</li>
-			</ul>
-
+			<div class="info__block">
+				<p>NEW YORK Concept House — це можливість дотримуватися американського стилю життя в самому центрі Києва.</p>
+				<ul>
+					<li>Унікальна архітектура</li>
+					<li>Консьєрж-сервіс</li>
+					<li>Розвинена інфраструктура навколо будинку</li>
+					<li>Система «Розумний будинок»</li>
+					<li>Зручна транспортна розв’язка</li>
+				</ul>
+				Клас житла: бізнес + 
+				Кількість поверхів: 22
+				Кількість квартир: 225
+				Кількість паркомісць: 21
+				Загальна площа комерційних приміщень: 1 610,68 м2
+		
+				Площі квартир:
+			
+				1-к: 41 – 59 м2
+				2-к: 61 - 89,6 м2
+				3-к: 91 - 163.5 м2
+				Адреса: вул. Антоновича, 74, Голосіївський район
+			</div>	
 		</div>
 
 		<div class="block__img img-infra">
@@ -172,7 +143,119 @@
 		</div>
 		<!-- end popap -->
 		<!-- begin popap-map -->
-			<div class="popap-map" data-popap="map1">
+		<div class="popap-map" data-popap="map1">
+			<div class="popap-map__inner">
+				<img src="img/map.jpg" alt="map">
+			</div>
+			<div class="popap-map__bottom">
+				<div class="popap-map__btn">
+					<a href="#" class="popap-map__google">
+						<img src="img/google-maps.png" alt="google-maps">
+						<span class="popap-map__icon-text">ВІДКРИТИ В GOOGLE</span>
+					</a>
+					<div class="popap-map__close">
+						<a href="#" class="btn-close-map">
+							<img src="img/close.svg" alt="close">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end popap-map -->
+
+	</div>
+	<!-- end block -->
+
+	<!-- begin block -->
+		<div class="block block__reverse">
+			<div class="block__info info">
+				<h2 class="info__title title-lg-show"><span class="title-big">NEW YORK</span> Concept House</h2>
+				<h3 class="info__subtitle">АМЕРИКАНСЬКА ЯКІСТЬ. УКРАЇНСЬКА ЦІНА.</h3>
+				<div class="info__block">
+				<p>NEW YORK Concept House — це можливість дотримуватися американського стилю життя в самому центрі Києва.</p>
+				<ul>
+					<li>Унікальна архітектура</li>
+					<li>Консьєрж-сервіс</li>
+					<li>Розвинена інфраструктура навколо будинку</li>
+					<li>Система «Розумний будинок»</li>
+					<li>Зручна транспортна розв’язка</li>
+				</ul>
+				Клас житла: бізнес + 
+				Кількість поверхів: 22
+				Кількість квартир: 225
+				Кількість паркомісць: 21
+				Загальна площа комерційних приміщень: 1 610,68 м2
+		
+				Площі квартир:
+			
+				1-к: 41 – 59 м2
+				2-к: 61 - 89,6 м2
+				3-к: 91 - 163.5 м2
+				Адреса: вул. Антоновича, 74, Голосіївський район
+			</div>	
+		</div>
+		<div class="block__img img-infra">
+			<div class="img-infra__text img-infra__text_reverse">введено в експлуатацію</div>
+			<div class="img-infra__location img-infra__location_reverse"  data-popap-triger="map2">
+				<img src="img/location-pin.png" alt="location">
+			</div>
+			<a href="#" class="img-infra__logo img-infra__logo_reverse">
+				<img src="img/new-york-logo.png" alt="logo">
+			</a>
+			<div class="img-infra__images">
+				<img src="img/new_york.png" alt="New York">
+			</div>
+			
+			<div class="img-infra__button img-infra__button_reverse">
+				<a href="#" class="btn">
+					<span class="btn__text">ПЛАНУВАННЯ/ШАХМАТКА</span>
+				</a>
+				<div class="btn js-gallery" data-popap-triger="two">
+					<span class="btn__text">ПЕРЕГЛЯНУТИ ГАЛЕРЕЮ</span>
+				</div>
+			</div>
+		</div>
+		<div class="info__title-tablet title-lg-hide">
+			<h2 class="info__title title-gray"><span class="title-big">NEW YORK</span> Concept House</h2>
+		</div>
+		<!-- begin popap -->
+		<div class="popap" data-popap="two">
+			<div class="popap__inner">
+				<div class="popap__in">
+					<div class="gallery">
+						<div class="gallery__item">
+							<img src="img/gallery-chicago.png" alt="">
+						</div>
+						<div class="gallery__item">
+							<img src="img/gallery-chicago.png" alt="">
+						</div>
+						<div class="gallery__item">
+							<img src="img/gallery-chicago.png" alt="">
+						</div>
+					</div>
+					<div class="gallery__btn">
+						<div class="gallery__btn-prev">
+							<img src="img/prev-arrov.svg" alt="arrow">Попереднє фото
+						</div>
+						<div class="gallery__btn-center">
+							<a href="#" class="btn-plan">Планування шахматка</a>
+						</div>
+						<div class="gallery__btn-next">
+							Наступне фото<img src="img/next-arrow.svg" alt="arrow">
+						</div>
+					</div>
+					<div class="popap__close">
+						<a href="#" class="btn-close">
+							<img src="img/close.svg" alt="close">
+						</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<!-- end popap -->
+		<!-- begin popap-map -->
+			<div class="popap-map" data-popap="map2">
 				<div class="popap-map__inner">
 					<img src="img/map.jpg" alt="map">
 				</div>
@@ -191,148 +274,35 @@
 				</div>
 			</div>
 		<!-- end popap-map -->
-
-	</div>
-	<!-- end block -->
-
-	<!-- begin block -->
-		<div class="block block__reverse">
-			<div class="block__info info">
-				<h2 class="info__title title-lg-show"><span class="title-big">NEW YORK</span> Concept House</h2>
-				<h3 class="info__subtitle">АМЕРИКАНСЬКА ЯКІСТЬ. УКРАЇНСЬКА ЦІНА.</h3>
-				<p class="info__description">NEW YORK Concept House — це можливість дотримуватися американського стилю життя в самому центрі Києва.</p>
-				<ul class="info__list">
-					<li class="info__item">Унікальна архітектура</li>
-					<li class="info__item">Консьєрж-сервіс</li>
-					<li class="info__item">Розвинена інфраструктура навколо будинку</li>
-					<li class="info__item">Система «Розумний будинок»</li>
-					<li class="info__item">Зручна транспортна розв’язка</li>
-					<li class="info__item">Квартири з терасами</li>
-				</ul>
-				<ul class="info__list-house">
-					<li class="info__item-house">
-						Клас житла:<span class="info__item-value"> бізнес + </span>
-					</li>
-					<li class="info__item-house">
-						Кількість поверхів:<span class="info__item-value">22</span>
-					</li>
-					<li class="info__item-house">
-						Кількість квартир:<span class="info__item-value">225</span>
-					</li>
-					<li class="info__item-house">
-						Кількість паркомісць:<span class="info__item-value">21</span>
-					</li>
-				</ul>
-				<ul class="info__list-house">
-					<li class="info__item-house">
-						Загальна площа <br> комерційних приміщень: <span class="info__item-value">1 610,68 м2</span>
-					</li>
-				</ul>
-				<ul class="info__list-house">
-					<li class="info__item-house">
-						Площі квартир:
-					</li>
-					<li class="info__item-house">
-						1-к:<span class="info__item-value">41 – 59 м2</span>
-					</li>
-					<li class="info__item-house">
-						2-к:<span class="info__item-value">89,6 м2</span>
-					</li>
-					<li class="info__item-house">
-						3-к:<span class="info__item-value">91 – 163,5 м2</span>
-					</li>
-					<li class="info__item-house">
-						Пентхауси:<span class="info__item-value"> 87,4 – 204 м2</span>
-					</li>
-				</ul>
-				<ul class="info__list-house">
-					<li class="info__item-house">
-						Адреса:<span class="info__item-value">вул. Антоновича, 74, Голосіївський район</span>
-					</li>
-				</ul>
-			</div>
-			<div class="block__img img-infra">
-				<div class="img-infra__text img-infra__text_reverse">введено в експлуатацію</div>
-				<div class="img-infra__location img-infra__location_reverse"  data-popap-triger="map2">
-					<img src="img/location-pin.png" alt="location">
-				</div>
-				<a href="#" class="img-infra__logo img-infra__logo_reverse">
-					<img src="img/new-york-logo.png" alt="logo">
-				</a>
-				<div class="img-infra__images">
-					<img src="img/new_york.png" alt="New York">
-				</div>
-				
-				<div class="img-infra__button img-infra__button_reverse">
-					<a href="#" class="btn">
-						<span class="btn__text">ПЛАНУВАННЯ/ШАХМАТКА</span>
-					</a>
-					<div class="btn js-gallery" data-popap-triger="two">
-						<span class="btn__text">ПЕРЕГЛЯНУТИ ГАЛЕРЕЮ</span>
-					</div>
-				</div>
-			</div>
-			<div class="info__title-tablet title-lg-hide">
-				<h2 class="info__title title-gray"><span class="title-big">NEW YORK</span> Concept House</h2>
-			</div>
-			<!-- begin popap -->
-			<div class="popap" data-popap="two">
-				<div class="popap__inner">
-					<div class="popap__in">
-						<div class="gallery">
-							<div class="gallery__item">
-								<img src="img/gallery-chicago.png" alt="">
-							</div>
-							<div class="gallery__item">
-								<img src="img/gallery-chicago.png" alt="">
-							</div>
-							<div class="gallery__item">
-								<img src="img/gallery-chicago.png" alt="">
-							</div>
-						</div>
-						<div class="gallery__btn">
-							<div class="gallery__btn-prev">
-								<img src="img/prev-arrov.svg" alt="arrow">Попереднє фото
-							</div>
-							<div class="gallery__btn-center">
-								<a href="#" class="btn-plan">Планування шахматка</a>
-							</div>
-							<div class="gallery__btn-next">
-								Наступне фото<img src="img/next-arrow.svg" alt="arrow">
-							</div>
-						</div>
-						<div class="popap__close">
-							<a href="#" class="btn-close">
-								<img src="img/close.svg" alt="close">
-							</a>
-						</div>
-					</div>
-				</div>
-				
-			</div>
-			<!-- end popap -->
-			<!-- begin popap-map -->
-				<div class="popap-map" data-popap="map2">
-					<div class="popap-map__inner">
-						<img src="img/map.jpg" alt="map">
-					</div>
-					<div class="popap-map__bottom">
-						<div class="popap-map__btn">
-							<a href="#" class="popap-map__google">
-								<img src="img/google-maps.png" alt="google-maps">
-								<span class="popap-map__icon-text">ВІДКРИТИ В GOOGLE</span>
-							</a>
-							<div class="popap-map__close">
-								<a href="#" class="btn-close-map">
-									<img src="img/close.svg" alt="close">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			<!-- end popap-map -->
 		</div>
 	<!-- end block -->
+
+	<!-- begin footer -->
+	<div class="footer">
+		<div class="footer__inner">
+			<a href="#"" class="footer__logo">
+				<img src="img/saga.png" alt="logo">
+				<span class="footer__logo-text">SAGA Development</span>
+				<span class="footer__copy">Всі права захищені.</span>	
+			</a>
+			<div class="footer__icons-soc">
+				<a href="#" class="footer__icon-soc">
+					<img src="img/youtube.png" alt="youtube">
+				</a>
+				<a href="#" class="footer__icon-soc">
+					<img src="img/facebook.png" alt="facebook">
+				</a>
+				<a href="#" class="footer__icon-soc">
+					<img src="img/instagram.png" alt="instagram">
+				</a>
+			</div>
+			<a href="#" class="footer__logo-dev">
+				<span class="footer__logo-dev-text">Розроблено</span>
+				<img src="img/logo-dev.png" alt="logo-dev">
+			</a>
+		</div>
+	</div>
+	<!-- end footer -->
 	
 	 <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
 	

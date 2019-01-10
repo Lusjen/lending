@@ -9,8 +9,8 @@ body
 	background-color: #3d4c62
 	position: relative
 	padding: 174px 0 173px
-	max-width: 1804px
-	margin: 0 auto
+	// max-width: 1804px
+	// margin: 0 auto
 	overflow: hidden
 	&__img
 		width: 347px
@@ -99,8 +99,8 @@ body
 
 .map-block
 	height: 800px
-	max-width: 1804px
-	margin: 0 auto
+	// max-width: 1804px
+	// margin: 0 auto
 	&__img
 		height: 100%
 
@@ -110,11 +110,11 @@ body
 	line-height: 1.37
 	display: flex
 	align-items: stretch
-	max-width: 1804px
-	margin: 0 auto
+	// max-width: 1804px
+	// margin: 0 auto
 	position: relative
-	min-height: 100vh
 	height: auto
+	min-height: 100vh
 	&__reverse
 		flex-direction: row-reverse
 	&__info
@@ -136,6 +136,9 @@ body
 
 .info
 	color: #ffffff
+	display: flex
+	flex-direction: column
+	justify-content: center
 	&__title
 		font-size: 16px
 		max-width: 164px
@@ -153,14 +156,28 @@ body
 		font-weight: 500
 		text-align: center
 		text-transform: uppercase
-	&__description
-		margin-bottom: 27px
-	&__list
-		margin-bottom: 27px
-	&__list-house
-		margin-bottom: 27px
-	&__item-value
-		margin-left: 5px
+	&__block
+		font-weight: 300
+		color: #ffffff 
+		ul
+			li
+				position: relative
+				padding-left: 10px
+				&:before
+					content: ''
+					position: absolute
+					width: 3px
+					height: 3px
+					border-radius: 50%			
+					left: 0
+					background-color: #ffffff
+					display: block
+					top: 9px 
+			
+	// &__list-house
+	// 	margin-bottom: 27px
+	// &__item-value
+	// 	margin-left: 5px
 
 .title-gray
 	color: #3d4c62
@@ -257,7 +274,8 @@ body
 	background-color: #000000
 	text-transform: uppercase
 	position: relative
-	margin-left: 15px
+	&:nth-child(2)
+		margin-left: 15px
 	&__text
 		cursor: pointer
 		position: absolute
@@ -288,6 +306,7 @@ body
 		flex-direction: column
 		justify-content: space-between
 		height: 100%
+		padding: 0 100px 
 	&__in
 		position: relative
 		padding: 0 20px
@@ -425,6 +444,35 @@ body
 		height: 80vh
 		margin: 0 auto
 
+.footer
+	font-size: 16px
+	font-weight: 300
+	&__inner
+		padding: 32px 100px 
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__logo
+		display: flex
+		text-decoration: none
+		align-items: center
+		color: #3d4c62 
+	&__logo-text
+		font-weight: 500
+		margin: 0 16px 0 5px
+	&__logo-dev
+		text-decoration: none
+	&__logo-dev-text
+		display: block
+		color: #3d4c62
+	&__icons-soc
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+	&__icon-soc
+		margin: 0 8px
+		display: inline-block 
+
 +r(1200)
 	.block-top
 		&__title
@@ -466,14 +514,59 @@ body
 			margin: 0 auto 18px
 		&__description
 			margin-bottom: 18px
-		&__list
-			margin-bottom: 18px
-		&__list-house
-			margin-bottom: 18px
+	.gallery
+		&__btn
+			top: 0
+			bottom: auto
+			background-color: rgba(0,0,0,0.52)
+		&__btn-prev,
+		&__btn-next
+			display: none
+	.popap
+		&__in
+			padding: 0
+		&__inner
+			padding: 0 30px
+	.slick-slide 
+		img
+			height: 100vh
+	.slick-dots
+		position: absolute
+		bottom: 25px
+		left: 0
+		text-align: center
+		right: 0
+		display: flex
+		justify-content: center
+		li
+			margin: 0 8px
+			border-radius: 50%
+			background: #ffffff
+			width: 10px
+			height: 10px
+			border: none
+			button
+				opacity: 0 
+				
 	.title-lg-hide
 		display: block
 	.title-lg-show
 		display: none
+	.btn-plan
+		padding: 13px 0
+	.footer
+		&__inner
+			flex-direction: column
+			justify-content: center
+		&__logo
+			flex-direction: column
+		&__logo-text
+			margin: 10px 0
+		&__icons-soc
+			position: relative
+			left: auto
+			transform: translateX(0)
+			margin: 15px 0 
 		
 
 +r(768)
@@ -486,4 +579,51 @@ body
 	.button-in-big
 		font-size: 16px
 		padding: 5px 24px
+	.img-infra
+		&__logo
+			width: 113px
+			height: 52px
+			border-radius: 10px 0 0 10px
+			img
+				max-width: 69px
+		&__text
+			padding: 5px 10px 4px 12px
+	.gallery
+		&__btn-center
+			display: none
+	.popap-map
+		&__btn
+			padding: 0 20px
+		&__icon-text
+			margin-left: 5px
+		&__google
+			max-width: 203px
+			padding: 6px 0
+			img
+				width: 24px
+				height: 24px
+	.btn-close-map,
+	.btn-close
+		width: 40px
+		height: 40px
+	.footer
+		&__inner
+			padding: 20px 30px
+		&__logo-text
+			margin: 8px 0
+		&__icons-soc
+		 	margin: 8px 0 
 
+// .gm-style-iw
+// 	background: green
+// 	// border-radius: 80px
+// 	box-shadow: -14px 0px 0px green, -14px 9px 0px green, -14px -8px 0px green, 15px -8px 0px green, 15px 9px 0px green
+// 	overflow: visible !important
+// 	.gm-style-iw
+// 		position: relative
+// 		&::before
+// 		    content: ''
+// 		    width: calc(100% + 29px)
+// 		    height: calc(100% + 17px)
+// 		    position: absolute
+// 		    background: green
