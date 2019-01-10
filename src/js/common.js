@@ -17,24 +17,40 @@ $(function() {
 	var logoUnSlider = function() {
 		$('.gallery').slick('unslick');
 	}
-	$('.btn__text').on('click', function() {
-		// $(function hpInitDeveloper() {
-			logoSlider(),
-		 // }),
-		$('.popap').addClass('open');
+	// $('.js-gallery').on('click', function() {
+	// 	// $(function hpInitDeveloper() {
+	// 		logoSlider(),
+	// 	 // }),
+	// 	$('.popap').addClass('open');
 		
-	});
+	// });
 
-	$('.btn-close').on('click', function() {
+	// $('.btn-close').on('click', function() {
 
-		$('.popap').removeClass('open'),
-		logoUnSlider();
-	})
+	// 	$('.popap').removeClass('open'),
+	// 	logoUnSlider();
+	// })
 	/* Initialize
 		 * ------------------------------------------------------ */
 		 // $(function hpInitDeveloper() {
 			// 	logoSlider();
 		 // });
+
+
+	var trigerPopap = $('[data-popap-triger]');
+	var close = $('.btn-close');
+	trigerPopap.click(function() {
+	  var popapName = $(this).data('popap-triger');
+	  // console.log(propName);
+	  	$('[data-popap="'+popapName+'"]').addClass('open'),
+	  	logoSlider();
+	});
+
+	close.click(function() {
+	  	 $('.popap').removeClass('open'),
+	  	 logoUnSlider();
+	});
+
 
 })(jQuery);
 

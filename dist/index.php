@@ -107,7 +107,7 @@
 				<a href="#" class="btn">
 					<span class="btn__text">ПЛАНУВАННЯ/ШАХМАТКА</span>
 				</a>
-				<a href="#" class="btn">
+				<a href="#" class="btn js-gallery" data-popap-triger="one">
 					<span class="btn__text">ПЕРЕГЛЯНУТИ ГАЛЕРЕЮ</span>
 				</a>
 			</div>
@@ -116,17 +116,17 @@
 			<h2 class="info__title title-gray"><span class="title-big">NEW YORK</span> Concept House</h2>
 		</div>
 		<!-- begin popap -->
-		<div class="popap">
+		<div class="popap" data-popap="one">
 			<div class="popap__inner">
 				<div class="gallery">
 					<div class="gallery__item">
-						<img src="img/gallery-chicago.png" alt="">
+						<img src="img/new_york.png" alt="">
 					</div>
 					<div class="gallery__item">
-						<img src="img/gallery-chicago.png" alt="">
+						<img src="img/new_york.png" alt="">
 					</div>
 					<div class="gallery__item">
-						<img src="img/gallery-chicago.png" alt="">
+						<img src="img/new_york.png" alt="">
 					</div>
 				</div>
 				<div class="gallery__btn">
@@ -224,7 +224,7 @@
 					<a href="#" class="btn">
 						<span class="btn__text">ПЛАНУВАННЯ/ШАХМАТКА</span>
 					</a>
-					<a href="#" class="btn">
+					<a href="#" class="btn js-gallery" data-popap-triger="two">
 						<span class="btn__text">ПЕРЕГЛЯНУТИ ГАЛЕРЕЮ</span>
 					</a>
 				</div>
@@ -232,6 +232,40 @@
 			<div class="info__title-tablet title-lg-hide">
 				<h2 class="info__title title-gray"><span class="title-big">NEW YORK</span> Concept House</h2>
 			</div>
+			<!-- begin popap -->
+			<div class="popap" data-popap="two">
+				<div class="popap__inner">
+					<div class="gallery">
+						<div class="gallery__item">
+							<img src="img/gallery-chicago.png" alt="">
+						</div>
+						<div class="gallery__item">
+							<img src="img/gallery-chicago.png" alt="">
+						</div>
+						<div class="gallery__item">
+							<img src="img/gallery-chicago.png" alt="">
+						</div>
+					</div>
+					<div class="gallery__btn">
+						<div class="gallery__btn-prev">
+							<img src="img/prev-arrov.svg" alt="arrow">Попереднє фото
+						</div>
+						<div class="gallery__btn-center">
+							<a href="#" class="btn-plan">Планування шахматка</a>
+						</div>
+						<div class="gallery__btn-next">
+							Наступне фото<img src="img/next-arrow.svg" alt="arrow">
+						</div>
+					</div>
+					<div class="popap__close">
+						<a href="#" class="btn-close">
+							<img src="img/close.svg" alt="close">
+						</a>
+					</div>
+				</div>
+				
+			</div>
+			<!-- end popap -->
 		</div>
 	<!-- end block -->
 	
