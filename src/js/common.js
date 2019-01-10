@@ -16,7 +16,9 @@ $(function() {
 	}
 	var logoUnSlider = function() {
 		$('.gallery').slick('unslick');
+		
 	}
+	logoSlider();
 	// $('.js-gallery').on('click', function() {
 	// 	// $(function hpInitDeveloper() {
 	// 		logoSlider(),
@@ -42,15 +44,43 @@ $(function() {
 	trigerPopap.click(function() {
 	  var popapName = $(this).data('popap-triger');
 	  // console.log(propName);
-	  	$('[data-popap="'+popapName+'"]').addClass('open'),
-	  	logoSlider();
+	  	$('[data-popap="'+popapName+'"]').addClass('open')
+	  	//logoSlider();
+	  	// console.log($('[data-popap="'+popapName+'"]'));	
+	  });
+
+	close.click(function(event) {
+		// console.log($(this).parents('.popap'));
+		$(this).parents('.popap').removeClass('open');
+	  	 //$('.popap').removeClass('open'),
+	  	 //logoUnSlider();
+	  	 event.stopPropagation();
 	});
 
-	close.click(function() {
-	  	 $('.popap').removeClass('open'),
-	  	 logoUnSlider();
+
+
+
+	var trigerPopapMap = $('[data-popap-triger]');
+	var closeMap = $('.btn-close-map');
+	trigerPopapMap.click(function() {
+	  var popapNameMap = $(this).data('popap-triger');
+	  // console.log(propName);
+	  	$('[data-popap="'+popapNameMap+'"]').addClass('open')
+	  	//logoSlider();
+	  	// console.log($('[data-popap="'+popapName+'"]'));	
+	  });
+
+	closeMap.click(function(event) {
+		// console.log($(this).parents('.popap'));
+		$(this).parents('.popap-map').removeClass('open');
+	  	 //$('.popap').removeClass('open'),
+	  	 //logoUnSlider();
+	  	 event.stopPropagation();
 	});
 
+	$('.button-in-big').click(function() {
+		$('.form-user__user-in').toggleClass('open');
+	})
 
 })(jQuery);
 

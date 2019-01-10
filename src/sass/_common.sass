@@ -1,60 +1,108 @@
 @import "vars"
 
-// ::placeholder
-// 	color: #666
+body
+	font-family: PFDinTextPro
+	font-weight: 300
+	line-height: 1.37
 
-// ::selection
-// 	background-color: $accent
-// 	color: #fff
+.block-top
+	background-color: #3d4c62
+	position: relative
+	padding: 174px 0 173px
+	max-width: 1804px
+	margin: 0 auto
+	overflow: hidden
+	&__img
+		width: 347px
+		height: 347px
+		margin: 0 auto
+		// position: absolute
+		// left: 50%
+		// top: 50%
+		// transform: translate(-50%,-50%)
+		img 
+			display: block
+			max-width: 100%
+	&__user
+		position: absolute
+		top: 80px
+		right: 100px
+	&__title
+		color: #ffffff
+		font-size: 60px
+		font-weight: 300
+		text-align: center
+		margin-top: 64px
+		text-transform: uppercase
+	
 
-// body
-// 	font-size: 16px
-// 	min-width: 320px
-// 	position: relative
-// 	line-height: 1.65
-// 	font-family: $default-font
-// 	overflow-x: hidden
-// 	color: $text
-// 	// background-color: #eaeaea
-// 	background-color: yellow
+.form-user
+	&__row
+		margin-bottom: 10px
+	&__label
+		display: block
+		margin-bottom: 10px
+		color: #3d4c62
+	&__input
+		border-radius: 5px
+		border: 2px solid #3d4c62
+		height: 30px
+		width: 100%
+	&__btn-big
+		text-align: right
+		margin-bottom: 8px
+	&__btn
+		margin: 0 auto
+		text-align: center
+	&__user-in
+		border-radius: 10px
+		background-color: #ffffff
+		padding: 20px
+		width: 253px
+		opacity: 0
+		visibility: hidden
+		position: relative
+		right: -300px
+		transition: all 0.5s
+		&.open
+			opacity: 1
+			visibility: visible
+			right: 0
 
-// 	input, textarea
-// 		border: #666 1px solid
-// 		outline: none
-// 		&:focus:required:invalid
-// 			border-color: tomato
-// 		&:required:valid
-// 			border-color: green
+.button-in
+	border-radius: 5px
+	border: 2px solid #3d4c62
+	background-color: #3d4c62
+	color: #ffffff
+	font-size: 16px
+	font-weight: 300
+	padding: 8px 33px
+	cursor: pointer
+	text-transform: uppercase
+	transition: opacity 0.3s
+	&:hover
+		opacity: 0.9
+.button-in-big
+	border-radius: 23px
+	border: 2px solid #ffffff
+	padding: 7px 44px
+	background-color: transparent
+	font-size: 24px
+	font-weight: 300
+	color: #ffffff
+	cursor: pointer
+	font-family: PFDinTextPro
+	transition: border-radius 0.3s
+	text-transform: uppercase
+	&:hover
+		border-radius: 15px
 
-// .img-responsive
-// 	display: block
-// 	max-width: 100%
-// 	height: auto
-// 	&.img-width
-// 		width: 100%
-
-// .text-center
-// 	text-align: center
-
-// b, strong
-// 	font-weight: bold
-
-
-
-// @import "media" // Always at the end
-
-// .title
-// 	+r(1024)
-// 		color: red
-
-
-// .img__block
-// 	width: 80%
-// 	margin: 0 auto
-
-// .img-big
-// 	display: block
-// 	min-width: 100%
+.map-block
+	height: 800px
+	max-width: 1804px
+	margin: 0 auto
+	&__img
+		height: 100%
 
 .block
 	font-family: PFDinTextPro
@@ -65,6 +113,8 @@
 	max-width: 1804px
 	margin: 0 auto
 	position: relative
+	min-height: 100vh
+	height: auto
 	&__reverse
 		flex-direction: row-reverse
 	&__info
@@ -209,70 +259,27 @@
 	position: relative
 	margin-left: 15px
 	&__text
+		cursor: pointer
 		position: absolute
 		top: 50%
 		left: 50%
 		transform: translate(-50%,-50%)
 		text-align: center
 
-+r(1200)
-	.block
-		flex-direction: column-reverse
-		&__info
-			width: auto
-			padding: 20px 29px
-		&__img
-			width: 100%
-	.img-infra
-		&__logo
-			width: 188px
-			height: 80px
-			img
-				max-width: 134px
-		&__button
-			right: 32px
-		&__text_reverse
-			left: 0
-			right: auto
-			border-radius: 0 10px 2px 0
-		&__location_reverse
-			right: auto
-			left: 32px
-		&__logo_reverse
-			right: 0
-			left: auto
-			border-radius: 20px 0 0 20px
-		&__button_reverse
-			right: 32px
-			left: auto
-	.info
-		&__subtitle
-			margin: 0 auto 18px
-		&__description
-			margin-bottom: 18px
-		&__list
-			margin-bottom: 18px
-		&__list-house
-			margin-bottom: 18px
-	.title-lg-hide
-		display: block
-	.title-lg-show
-		display: none
-
-
 .popap
 	opacity: 0
 	visibility: hidden
-	position: absolute
+	position: fixed
 	background: rgba(0,0,0,0.95)
 	left: 0
-	right: 0
 	top: 0
-	bottom: 0
+	height: 100%
+	width: 100%
 	z-index: 20
 	margin:  0 auto 
-	padding: 0 102px
+	// padding: 0 102px
 	transition:  all 0.3s
+	height: 100%
 	&.open
 		opacity: 1
 		visibility: visible
@@ -280,16 +287,82 @@
 		position: relative
 		flex-direction: column
 		justify-content: space-between
-		height: 100%;
+		height: 100%
+	&__in
+		position: relative
+		padding: 0 20px
+		height: 100%
+		max-width: 1640px
+		margin: 0 auto
+.popap-map
+	opacity: 0
+	visibility: hidden
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	z-index: 20
+	margin:  0 auto
+	transition:  all 0.3s
+	&.open
+		opacity: 1
+		visibility: visible
+	&__inner
+		height: 100%
+		img
+			min-height: 100%
+			display: block
+			object-fit: cover
+			max-width: 100%
+	&__bottom
+		background-color: rgba(0,0,0,0.52)
+		// opacity: 0.52
+		position: absolute
+		bottom: 0
+		padding: 28px 0
+		left: 0
+		right: 0
+		
+	&__google
+		display: inline-block
+		display: flex
+		justify-content: center
+		align-items: center
+		border-radius: 23px
+		border: 2px solid #ffffff
+		font-size: 16px
+		font-weight: 300
+		color: #ffffff
+		max-width: 272px
+		width: 100%
+		text-decoration: none
+		text-transform: uppercase
+		padding: 10px 0
+	&__btn
+		max-width: 1640px
+		padding: 0 40px
+		margin: 0 auto
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__icon-text
+		margin-left: 24px
+
 		
 .gallery
 	margin: 0 auto
 	max-width: 928px
 	&__btn
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
 		padding: 22px 0
 		margin: 0 auto 
 		display: flex
 		width: 100%
+		max-width: 1600px	
 		justify-content: space-between
 	&__btn-center
 		width: 272px
@@ -333,6 +406,84 @@
 		left: 50%
 		top: 50%
 		transform: translate(-50%,-50%)
+
+.btn-close-map
+	width: 48px
+	height: 48px
+	border: 1px solid #fff
+	border-radius: 50%
+	position: relative
+	display: inline-block
+	img
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+
 .slick-slide 
 	img
-		height: 683px
+		height: 80vh
+		margin: 0 auto
+
++r(1200)
+	.block-top
+		&__title
+			font-size: 48px
+		&__user
+			top: 32px
+			right: 32px
+	.block
+		flex-direction: column-reverse
+		&__info
+			width: auto
+			padding: 20px 29px
+		&__img
+			width: 100%
+	.img-infra
+		&__logo
+			width: 188px
+			height: 80px
+			img
+				max-width: 134px
+		&__button
+			right: 32px
+		&__text_reverse
+			left: 0
+			right: auto
+			border-radius: 0 10px 2px 0
+		&__location_reverse
+			right: auto
+			left: 32px
+		&__logo_reverse
+			right: 0
+			left: auto
+			border-radius: 20px 0 0 20px
+		&__button_reverse
+			right: 32px
+			left: auto
+	.info
+		&__subtitle
+			margin: 0 auto 18px
+		&__description
+			margin-bottom: 18px
+		&__list
+			margin-bottom: 18px
+		&__list-house
+			margin-bottom: 18px
+	.title-lg-hide
+		display: block
+	.title-lg-show
+		display: none
+		
+
++r(768)
+	.block-top
+		&__img
+			width: 174px
+			height: 174px
+		&__title
+			font-size: 24px
+	.button-in-big
+		font-size: 16px
+		padding: 5px 24px
+

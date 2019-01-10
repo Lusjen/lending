@@ -78,7 +78,7 @@ gulp.task('js', function() {
 		'src/js/libs/scripts.min.js',
 		'src/js/libs/slick-carousel/slick/slick.min.js',
 		
-		'src/js/libs/ion.rangeSlider.js',
+		// 'src/js/libs/ion.rangeSlider.js',
 		'src/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

@@ -4,34 +4,52 @@
 <head>
 
 	<meta charset="utf-8">
-	<!-- <base href="/"> -->
 
-	<title>title</title>
+	<title>Saga</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
-	<!-- Template Basic Images Start -->
-	<!-- <meta property="og:image" content="path/to/image.jpg">
-	<link rel="icon" href="img/favicon/favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png"> -->
-	<!-- Template Basic Images End -->
-	
-	<!-- Custom Browsers Color Start -->
-	<meta name="theme-color" content="#000">
-	<!-- Custom Browsers Color End -->
-	<!-- <link rel="stylesheet" href="css/libs/ion.rangeSlider.min.css">
-	<link rel="stylesheet" href="css/libs/ion.rangeSlider.skinHTML5.min.css"> -->
 	<link rel="stylesheet" href="css/main.min.css">
 
 
 </head>
 
 <body>
-	<div class="block-logo">
-		
+
+	<div class="block-top">
+		<div class="block-top__img">
+			<img src="img/logo-saga.svg" alt="logo">
+		</div>
+		<h1 class="block-top__title">Сага твого життя</h1>
+		<div class="block-top__user">
+			<form class="form-user">
+				<div class="form-user__btn-big">
+					<button class="button-in-big">Вхід</button>
+				</div>
+				<div class="form-user__user-in">
+					<div class="form-user__row">
+						<label for="logo" class="form-user__label">Логін</label>
+						<input id="logo" type="text" class="form-user__input">
+					</div>
+					<div class="form-user__row">
+						<label for="password" class="form-user__label">Пароль</label>
+						<input id="password" type="text" class="form-user__input">
+					</div>
+					<div class="form-user__btn">
+						<button class="button-in">Вхід</button>
+					</div>
+				</div>
+			</form>
+		</div>
 	</div>
+	
+	<!-- begin map -->
+		<div class="map-block">
+			<div id="map" class="map-block__img"></div>
+		</div>
+	<!-- end map -->
 
 	<!-- begin block -->
 	<div class="block">
@@ -93,9 +111,9 @@
 
 		<div class="block__img img-infra">
 			<div class="img-infra__text">введено в експлуатацію</div>
-			<a href="#" class="img-infra__location">
+			<div class="img-infra__location" data-popap-triger="map1">
 				<img src="img/location-pin.png" alt="location">
-			</a>
+			</div>
 			<a href="#" class="img-infra__logo">
 				<img src="img/new-york-logo.svg" alt="logo">
 			</a>
@@ -107,9 +125,9 @@
 				<a href="#" class="btn">
 					<span class="btn__text">ПЛАНУВАННЯ/ШАХМАТКА</span>
 				</a>
-				<a href="#" class="btn js-gallery" data-popap-triger="one">
+				<div class="btn js-gallery" data-popap-triger="one">
 					<span class="btn__text">ПЕРЕГЛЯНУТИ ГАЛЕРЕЮ</span>
-				</a>
+				</div>
 			</div>
 		</div>
 		<div class="info__title-tablet title-lg-hide">
@@ -118,37 +136,62 @@
 		<!-- begin popap -->
 		<div class="popap" data-popap="one">
 			<div class="popap__inner">
-				<div class="gallery">
-					<div class="gallery__item">
-						<img src="img/new_york.png" alt="">
+				<div class="popap__in">
+					<div class="gallery">
+						<div class="gallery__item">
+							<img src="img/new_york.png" alt="">
+						</div>
+						<div class="gallery__item">
+							<img src="img/new_york.png" alt="">
+						</div>
+						<div class="gallery__item">
+							<img src="img/new_york.png" alt="">
+						</div>
 					</div>
-					<div class="gallery__item">
-						<img src="img/new_york.png" alt="">
+			
+				
+					<div class="gallery__btn">
+						<div class="gallery__btn-prev">
+							<img src="img/prev-arrov.svg" alt="arrow">Попереднє фото
+						</div>
+						<div class="gallery__btn-center">
+							<a href="#" class="btn-plan">Планування шахматка</a>
+						</div>
+						<div class="gallery__btn-next">
+							Наступне фото<img src="img/next-arrow.svg" alt="arrow">
+						</div>
 					</div>
-					<div class="gallery__item">
-						<img src="img/new_york.png" alt="">
+					<div class="popap__close">
+						<a href="#" class="btn-close">
+							<img src="img/close.svg" alt="close">
+						</a>
 					</div>
-				</div>
-				<div class="gallery__btn">
-					<div class="gallery__btn-prev">
-						<img src="img/prev-arrov.svg" alt="arrow">Попереднє фото
-					</div>
-					<div class="gallery__btn-center">
-						<a href="#" class="btn-plan">Планування шахматка</a>
-					</div>
-					<div class="gallery__btn-next">
-						Наступне фото<img src="img/next-arrow.svg" alt="arrow">
-					</div>
-				</div>
-				<div class="popap__close">
-					<a href="#" class="btn-close">
-						<img src="img/close.svg" alt="close">
-					</a>
 				</div>
 			</div>
 			
 		</div>
 		<!-- end popap -->
+		<!-- begin popap-map -->
+			<div class="popap-map" data-popap="map1">
+				<div class="popap-map__inner">
+					<img src="img/map.jpg" alt="map">
+				</div>
+				<div class="popap-map__bottom">
+					<div class="popap-map__btn">
+						<a href="#" class="popap-map__google">
+							<img src="img/google-maps.png" alt="google-maps">
+							<span class="popap-map__icon-text">ВІДКРИТИ В GOOGLE</span>
+						</a>
+						<div class="popap-map__close">
+							<a href="#" class="btn-close-map">
+								<img src="img/close.svg" alt="close">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- end popap-map -->
+
 	</div>
 	<!-- end block -->
 
@@ -210,9 +253,9 @@
 			</div>
 			<div class="block__img img-infra">
 				<div class="img-infra__text img-infra__text_reverse">введено в експлуатацію</div>
-				<a href="#" class="img-infra__location img-infra__location_reverse">
+				<div class="img-infra__location img-infra__location_reverse"  data-popap-triger="map2">
 					<img src="img/location-pin.png" alt="location">
-				</a>
+				</div>
 				<a href="#" class="img-infra__logo img-infra__logo_reverse">
 					<img src="img/new-york-logo.png" alt="logo">
 				</a>
@@ -224,9 +267,9 @@
 					<a href="#" class="btn">
 						<span class="btn__text">ПЛАНУВАННЯ/ШАХМАТКА</span>
 					</a>
-					<a href="#" class="btn js-gallery" data-popap-triger="two">
+					<div class="btn js-gallery" data-popap-triger="two">
 						<span class="btn__text">ПЕРЕГЛЯНУТИ ГАЛЕРЕЮ</span>
-					</a>
+					</div>
 				</div>
 			</div>
 			<div class="info__title-tablet title-lg-hide">
@@ -235,44 +278,69 @@
 			<!-- begin popap -->
 			<div class="popap" data-popap="two">
 				<div class="popap__inner">
-					<div class="gallery">
-						<div class="gallery__item">
-							<img src="img/gallery-chicago.png" alt="">
+					<div class="popap__in">
+						<div class="gallery">
+							<div class="gallery__item">
+								<img src="img/gallery-chicago.png" alt="">
+							</div>
+							<div class="gallery__item">
+								<img src="img/gallery-chicago.png" alt="">
+							</div>
+							<div class="gallery__item">
+								<img src="img/gallery-chicago.png" alt="">
+							</div>
 						</div>
-						<div class="gallery__item">
-							<img src="img/gallery-chicago.png" alt="">
+						<div class="gallery__btn">
+							<div class="gallery__btn-prev">
+								<img src="img/prev-arrov.svg" alt="arrow">Попереднє фото
+							</div>
+							<div class="gallery__btn-center">
+								<a href="#" class="btn-plan">Планування шахматка</a>
+							</div>
+							<div class="gallery__btn-next">
+								Наступне фото<img src="img/next-arrow.svg" alt="arrow">
+							</div>
 						</div>
-						<div class="gallery__item">
-							<img src="img/gallery-chicago.png" alt="">
+						<div class="popap__close">
+							<a href="#" class="btn-close">
+								<img src="img/close.svg" alt="close">
+							</a>
 						</div>
-					</div>
-					<div class="gallery__btn">
-						<div class="gallery__btn-prev">
-							<img src="img/prev-arrov.svg" alt="arrow">Попереднє фото
-						</div>
-						<div class="gallery__btn-center">
-							<a href="#" class="btn-plan">Планування шахматка</a>
-						</div>
-						<div class="gallery__btn-next">
-							Наступне фото<img src="img/next-arrow.svg" alt="arrow">
-						</div>
-					</div>
-					<div class="popap__close">
-						<a href="#" class="btn-close">
-							<img src="img/close.svg" alt="close">
-						</a>
 					</div>
 				</div>
 				
 			</div>
 			<!-- end popap -->
+			<!-- begin popap-map -->
+				<div class="popap-map" data-popap="map2">
+					<div class="popap-map__inner">
+						<img src="img/map.jpg" alt="map">
+					</div>
+					<div class="popap-map__bottom">
+						<div class="popap-map__btn">
+							<a href="#" class="popap-map__google">
+								<img src="img/google-maps.png" alt="google-maps">
+								<span class="popap-map__icon-text">ВІДКРИТИ В GOOGLE</span>
+							</a>
+							<div class="popap-map__close">
+								<a href="#" class="btn-close-map">
+									<img src="img/close.svg" alt="close">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!-- end popap-map -->
 		</div>
 	<!-- end block -->
 	
 	 <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
 	
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
+	
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3v4tMpbXGrrr2GY00coDwi9YeP4aqyA4&amp;language=uk&amp;ver=1.16"></script>
 	<script src="js/scripts.min.js"></script>
+	<script src="js/common.js"></script>
 	
 </body>
 </html>
