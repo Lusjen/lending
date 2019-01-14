@@ -17,7 +17,7 @@
 </head>
 
 <body>
-
+	<!-- begin block-top -->
 	<div class="block-top">
 		<div class="block-top__img">
 			<img src="img/logo-saga.svg" alt="logo">
@@ -44,15 +44,20 @@
 			</form>
 		</div>
 	</div>
-	
+	<!-- end block-top -->
+
 	<!-- begin map -->
-		<div class="map-block">
-			<div id="map" class="map-block__img"></div>
+	<div class="map-block">
+		<div id="map" class="map-block__img"></div>
+		<div class="map-block__button">
+			<div class="map-block__btn is-active">Київ</div>
+			<div class="map-block__btn">Одеса</div>
 		</div>
+	</div>
 	<!-- end map -->
 
 	<!-- begin block -->
-	<div class="block">
+	<div class="block" id="img1">
 		<div class="block__info info">
 			<h2 class="info__title title-lg-show"><span class="title-big">NEW YORK</span> Concept House</h2>
 			<h3 class="info__subtitle">АМЕРИКАНСЬКА ЯКІСТЬ. УКРАЇНСЬКА ЦІНА.</h3>
@@ -65,39 +70,43 @@
 					<li>Система «Розумний будинок»</li>
 					<li>Зручна транспортна розв’язка</li>
 				</ul>
-				Клас житла: бізнес + 
-				Кількість поверхів: 22
-				Кількість квартир: 225
-				Кількість паркомісць: 21
-				Загальна площа комерційних приміщень: 1 610,68 м2
-		
-				Площі квартир:
+					Клас житла: бізнес + 
+					Кількість поверхів: 22
+					Кількість квартир: 225
+					Кількість паркомісць: 21
+					Загальна площа комерційних приміщень: 1 610,68 м2
 			
-				1-к: 41 – 59 м2
-				2-к: 61 - 89,6 м2
-				3-к: 91 - 163.5 м2
-				Адреса: вул. Антоновича, 74, Голосіївський район
+					Площі квартир:
+				
+					1-к: 41 – 59 м2
+					2-к: 61 - 89,6 м2
+					3-к: 91 - 163.5 м2
+					Адреса: вул. Антоновича, 74, Голосіївський район
 			</div>	
 		</div>
-
 		<div class="block__img img-infra">
 			<div class="img-infra__text">введено в експлуатацію</div>
 			<div class="img-infra__location" data-popap-triger="map1">
 				<img src="img/location-pin.png" alt="location">
 			</div>
-			<a href="#" class="img-infra__logo">
+			<div class="img-infra__logo">
 				<img src="img/new-york-logo.svg" alt="logo">
-			</a>
+			</div>
 			<div class="img-infra__images">
 				<img src="img/new_york.png" alt="New York">
 			</div>
 			
 			<div class="img-infra__button">
+				<div class="img-infra__location img-infra__location_reverse map-hide"  data-popap-triger="map1">
+					<img src="img/location-pin.png" alt="location">
+				</div>
 				<a href="#" class="btn">
-					<span class="btn__text">ПЛАНУВАННЯ/ШАХМАТКА</span>
+					<span class="btn__text xs-hide">ПЛАНУВАННЯ/ШАХМАТКА</span>
+					<img src="img/plan.png" alt="plan" class="xs-show">
 				</a>
 				<div class="btn js-gallery" data-popap-triger="one">
-					<span class="btn__text">ПЕРЕГЛЯНУТИ ГАЛЕРЕЮ</span>
+					<span class="btn__text xs-hide">ПЕРЕГЛЯНУТИ ГАЛЕРЕЮ</span>
+					<img src="img/gallery.png" alt="gallery" class="xs-show">
 				</div>
 			</div>
 		</div>
@@ -118,9 +127,7 @@
 						<div class="gallery__item">
 							<img src="img/new_york.png" alt="">
 						</div>
-					</div>
-			
-				
+					</div>	
 					<div class="gallery__btn">
 						<div class="gallery__btn-prev">
 							<img src="img/prev-arrov.svg" alt="arrow">Попереднє фото
@@ -162,16 +169,15 @@
 			</div>
 		</div>
 		<!-- end popap-map -->
-
 	</div>
 	<!-- end block -->
 
 	<!-- begin block -->
-		<div class="block block__reverse">
-			<div class="block__info info">
-				<h2 class="info__title title-lg-show"><span class="title-big">NEW YORK</span> Concept House</h2>
-				<h3 class="info__subtitle">АМЕРИКАНСЬКА ЯКІСТЬ. УКРАЇНСЬКА ЦІНА.</h3>
-				<div class="info__block">
+	<div class="block block__reverse" id="img2">
+		<div class="block__info info">
+			<h2 class="info__title title-lg-show"><span class="title-big">NEW YORK</span> Concept House</h2>
+			<h3 class="info__subtitle">АМЕРИКАНСЬКА ЯКІСТЬ. УКРАЇНСЬКА ЦІНА.</h3>
+			<div class="info__block">
 				<p>NEW YORK Concept House — це можливість дотримуватися американського стилю життя в самому центрі Києва.</p>
 				<ul>
 					<li>Унікальна архітектура</li>
@@ -180,18 +186,18 @@
 					<li>Система «Розумний будинок»</li>
 					<li>Зручна транспортна розв’язка</li>
 				</ul>
-				Клас житла: бізнес + 
-				Кількість поверхів: 22
-				Кількість квартир: 225
-				Кількість паркомісць: 21
-				Загальна площа комерційних приміщень: 1 610,68 м2
-		
-				Площі квартир:
+					Клас житла: бізнес + 
+					Кількість поверхів: 22
+					Кількість квартир: 225
+					Кількість паркомісць: 21
+					Загальна площа комерційних приміщень: 1 610,68 м2
 			
-				1-к: 41 – 59 м2
-				2-к: 61 - 89,6 м2
-				3-к: 91 - 163.5 м2
-				Адреса: вул. Антоновича, 74, Голосіївський район
+					Площі квартир:
+				
+					1-к: 41 – 59 м2
+					2-к: 61 - 89,6 м2
+					3-к: 91 - 163.5 м2
+					Адреса: вул. Антоновича, 74, Голосіївський район
 			</div>	
 		</div>
 		<div class="block__img img-infra">
@@ -199,19 +205,24 @@
 			<div class="img-infra__location img-infra__location_reverse"  data-popap-triger="map2">
 				<img src="img/location-pin.png" alt="location">
 			</div>
-			<a href="#" class="img-infra__logo img-infra__logo_reverse">
+			<div class="img-infra__logo img-infra__logo_reverse">
 				<img src="img/new-york-logo.png" alt="logo">
-			</a>
+			</div>
 			<div class="img-infra__images">
 				<img src="img/new_york.png" alt="New York">
 			</div>
 			
 			<div class="img-infra__button img-infra__button_reverse">
+				<div class="img-infra__location img-infra__location_reverse map-hide"  data-popap-triger="map2">
+					<img src="img/location-pin.png" alt="location">
+				</div>
 				<a href="#" class="btn">
-					<span class="btn__text">ПЛАНУВАННЯ/ШАХМАТКА</span>
+					<span class="btn__text xs-hide">ПЛАНУВАННЯ/ШАХМАТКА</span>
+					<img src="img/plan.png" alt="plan" class="xs-show">
 				</a>
 				<div class="btn js-gallery" data-popap-triger="two">
-					<span class="btn__text">ПЕРЕГЛЯНУТИ ГАЛЕРЕЮ</span>
+					<span class="btn__text xs-hide">ПЕРЕГЛЯНУТИ ГАЛЕРЕЮ</span>
+					<img src="img/gallery.png" alt="gallery" class="xs-show">
 				</div>
 			</div>
 		</div>
@@ -255,26 +266,26 @@
 		</div>
 		<!-- end popap -->
 		<!-- begin popap-map -->
-			<div class="popap-map" data-popap="map2">
-				<div class="popap-map__inner">
-					<img src="img/map.jpg" alt="map">
-				</div>
-				<div class="popap-map__bottom">
-					<div class="popap-map__btn">
-						<a href="#" class="popap-map__google">
-							<img src="img/google-maps.png" alt="google-maps">
-							<span class="popap-map__icon-text">ВІДКРИТИ В GOOGLE</span>
+		<div class="popap-map" data-popap="map2">
+			<div class="popap-map__inner">
+				<img src="img/map.jpg" alt="map">
+			</div>
+			<div class="popap-map__bottom">
+				<div class="popap-map__btn">
+					<a href="#" class="popap-map__google">
+						<img src="img/google-maps.png" alt="google-maps">
+						<span class="popap-map__icon-text">ВІДКРИТИ В GOOGLE</span>
+					</a>
+					<div class="popap-map__close">
+						<a href="#" class="btn-close-map">
+							<img src="img/close.svg" alt="close">
 						</a>
-						<div class="popap-map__close">
-							<a href="#" class="btn-close-map">
-								<img src="img/close.svg" alt="close">
-							</a>
-						</div>
 					</div>
 				</div>
 			</div>
-		<!-- end popap-map -->
 		</div>
+		<!-- end popap-map -->
+	</div>
 	<!-- end block -->
 
 	<!-- begin footer -->
@@ -304,13 +315,9 @@
 	</div>
 	<!-- end footer -->
 	
-	 <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
-	
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
-	
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3v4tMpbXGrrr2GY00coDwi9YeP4aqyA4&amp;language=uk&amp;ver=1.16"></script>
 	<script src="js/scripts.min.js"></script>
-	<script src="js/common.js"></script>
+	<script src="js/common-map.js"></script>
 	
 </body>
 </html>
