@@ -26,7 +26,7 @@
 		<div class="block-top__user">
 			<form class="form-user">
 				<div class="form-user__btn-big">
-					<button class="button-in-big">Вхід</button>
+					<button class="button-in-big js-button-in-big">Вхід</button>
 				</div>
 				<div class="form-user__user-in">
 					<div class="form-user__row">
@@ -35,7 +35,7 @@
 					</div>
 					<div class="form-user__row">
 						<label for="password" class="form-user__label">Пароль</label>
-						<input id="password" type="text" class="form-user__input">
+						<input id="password" type="password" class="form-user__input">
 					</div>
 					<div class="form-user__btn">
 						<button class="button-in">Вхід</button>
@@ -50,8 +50,8 @@
 	<div class="map-block">
 		<div id="map" class="map-block__img"></div>
 		<div class="map-block__button">
-			<div class="map-block__btn is-active">Київ</div>
-			<div class="map-block__btn">Одеса</div>
+			<div class="map-block__btn map-1 is-active">Київ</div>
+			<div class="map-block__btn map-2">Одеса</div>
 		</div>
 	</div>
 	<!-- end map -->

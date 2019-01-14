@@ -1,8 +1,11 @@
+var map;
+
 function mapMaker(id, longt, lat) {
 	var id = id;
 	flag_item = 1;
 	var img = 'img/'
 	var
+		contentString12 = '<div class="map__info-marker">детальніше про <span class="big-text">KANDINSKY Odessa Residence</span><a href="#img11"><img src="img/down-arrow-map.png" class="img11"></a></div>',
 		contentString2 = '<div class="map__info-marker">детальніше про <span class="big-text">CHICAGO CENTRAL HOUSE</span><a href="#img2"><img src="img/down-arrow-map.png" class="img2"></a></div>',
 		contentString3 = '<div class="map__info-marker">детальніше про <span class="big-text">Resident</span><a href="#img6"><img src="img/down-arrow-map.png" class="img6"></a></div>',
 		contentString4 = '<div class="map__info-marker">детальніше про <span class="big-text">New York</span><a href="#img1"><img src="img/down-arrow-map.png" class="img1"></a></div>',
@@ -12,8 +15,10 @@ function mapMaker(id, longt, lat) {
 		contentString8 = '<div class="map__info-marker">детальніше про <span class="big-text">Philadelphia</span><a href="#img3"><img src="img/down-arrow-map.png" class="img3"></a></div>',
 		contentString10 = '<div class="map__info-marker">детальніше про <span class="big-text">Happy House</span><a href="#img11"><img src="img/down-arrow-map.png" class="img11"></a></div>',
 		contentString11 = '<div class="map__info-marker">детальніше про <span class="big-text">San Francisco</span><a href="#img10"><img src="img/down-arrow-map.png" class="img10"></a></div>';
+		
 
 	var locations = [
+				[contentString12, 46.450553, 30.764012, img + 'kandinsky-icon.png'],
 				[contentString2, 50.433622, 30.513137, img + 'chicago-icon.png'],
 				[contentString3, 50.434986, 30.508315, img + 'resident-icon.png'],
 				[contentString4, 50.426332, 30.514147, img + 'new-york-icon.png'],
@@ -25,14 +30,15 @@ function mapMaker(id, longt, lat) {
 				[contentString10, 50.458392, 30.428209, img + 'happy-house-icon.png'],
 				// [contentString8, 50.439367, 30.544927, "/img/map/bank.png"],
         		[contentString11, 50.458894, 30.409671, img + 'sanfrancisco-icon.png']
-        		]
+        		
+        		];
 	// var centerX = 50.433613;
 	// var centerY = 30.513188;
 
 	// if($(window).width() < 748) {
 	// 	centerY = locations[0][2];
 	// }
-	var map = new google.maps.Map(document.getElementById(id), {
+	 map = new google.maps.Map(document.getElementById(id), {
 			zoom: 13.4,
 			scrollwheel: false,
 			center: new google.maps.LatLng( 50.440626, 30.512669),
@@ -71,10 +77,31 @@ function mapMaker(id, longt, lat) {
      });
 
 }
-if (document.getElementById('map')) {
-	mapMaker('map', 50.443626, 30.512669);
-}
+ if (document.getElementById('map')) {
+ 	mapMaker('map', 50.433622, 30.513137);
+ }
 
 // if (document.getElementById('map')) {
 // 	mapMaker('map');
+// }
+$('.map-1').click(function(){
+    map.setCenter({lat: 50.440626, lng: 30.512669}); 
+	$('.map-2').removeClass('is-active');
+	$('.map-1').addClass('is-active');
+});
+
+$('.map-2').click(function(){
+    map.setCenter({lat: 46.450553, lng: 30.764012}); 
+	$('.map-1').removeClass('is-active');
+	$('.map-2').addClass('is-active');
+
+});
+
+
+// if (document.getElementById('map')) {
+	
+// 	var markers = document.getElementById('maps-hidden').getAttribute('data-map');
+// 	markers = JSON.parse(markers);
+
+// 	mapMaker('map', 0, 0, markers);
 // }

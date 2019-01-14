@@ -28,7 +28,19 @@ body
 		text-align: center
 		margin-top: 64px
 		text-transform: uppercase
-	
+	&__title-error
+		font-size: 300px
+		text-align: center
+		font-weight: 500
+		color: #ffffff
+		animation: neon 0.01s ease-in-out infinite alternate
+
+@keyframes neon
+	0%
+		text-shadow: 0 0 6px rgba(202,228,225,0.92), 0 0 30px rgba(202,228,225,0.34), 0 0 12px rgba(1, 2, 1, 0.52), 0 0 21px rgba(1, 2, 1, 0.92), 0 0 34px rgba(1, 2, 1, 0.78), 0 0 54px rgba(1, 2, 1, 0.98)
+	100%
+		text-shadow: 0 0 6px rgba(202,228,225,0.98), 0 0 30px rgba(202,228,225,0.42), 0 0 12px rgba(1, 2, 1,0.58), 0 0 22px rgba(1, 2, 1,0.84), 0 0 38px rgba(1, 2, 1,0.88), 0 0 60px rgba(1, 2, 1,1)
+  
 .form-user
 	&__row
 		margin-bottom: 10px
@@ -88,6 +100,8 @@ body
 	font-family: PFDinTextPro
 	transition: border-radius 0.3s
 	text-transform: uppercase
+	text-decoration: none
+	display: inline-block
 	&:hover
 		border-radius: 15px
 
@@ -114,6 +128,7 @@ body
 		position: relative
 		text-align: center
 		transition: all 0.5s
+		text-decoration: none
 		&:before
 			content: ''
 			position: absolute
@@ -650,6 +665,8 @@ body
 			font-size: 24px
 		&__user
 			right: 15px
+		&__title-error
+			font-size: 150px
 	.block
 		&__info
 			padding: 20px 15px

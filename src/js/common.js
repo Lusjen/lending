@@ -1,4 +1,4 @@
-$(function() {
+jQuery(document).ready(function($) {
 	 
 	 var logoSlider = function() {
 	// Custom JS
@@ -53,10 +53,24 @@ $(function() {
 	  	 event.stopPropagation();
 	});
 
-	$('.button-in-big').click(function() {
+	$('.js-button-in-big').click(function() {
 		$('.form-user__user-in').toggleClass('open');
 		return false;
 	});
 
-})(jQuery);
+	$("#map").on("click",".map__info-marker a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+
+        //забираем идентификатор блока с атрибута href
+        var id  = $(this).attr('href'),
+
+            //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+
+        //анимируем переход на расстояние - top за 1000 мс
+        $('body,html').animate({scrollTop: top}, 1000);
+	});
+
+});
 
