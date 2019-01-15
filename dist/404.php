@@ -16,14 +16,10 @@
 
 </head>
 
-<body>
-	<div class="block-error">
-		<!-- begin block-top -->
-		<div class="block-top block-top__error">
-			<div class="block-top__in-error">
-				<!-- <div class="block-top__img">
-					<img src="img/logo-saga.svg" alt="logo">
-				</div> -->
+	<body>
+		<div class="block-error">
+			<!-- begin block-top -->
+			<div class="block-top block-top__error">
 				<h1 class="block-top__title-error">404</h1>
 				<div class="form-user__btn">
 					<a href="index.php" class="button-in-big">повернутись на головну</a>
@@ -48,40 +44,38 @@
 						</div>
 					</form>
 				</div>
-			</div>	
-			
-		</div>
-		<!-- end block-top -->
+			</div>
+			<!-- end block-top -->
 
-		<!-- begin footer -->
-		<div class="footer">
-			<div class="footer__inner">
-				<a href="#"" class="footer__logo">
-					<img src="img/saga.png" alt="logo">
-					<span class="footer__logo-text">SAGA Development</span>
-					<span class="footer__copy">Всі права захищені.</span>	
-				</a>
-				<div class="footer__icons-soc">
-					<a href="#" class="footer__icon-soc">
-						<img src="img/youtube.png" alt="youtube">
+			<!-- begin footer -->
+			<div class="footer">
+				<div class="footer__inner">
+					<a href="#"" class="footer__logo">
+						<img src="img/saga.png" alt="logo">
+						<span class="footer__logo-text">SAGA Development</span>
+						<span class="footer__copy">Всі права захищені.</span>	
 					</a>
-					<a href="#" class="footer__icon-soc">
-						<img src="img/facebook.png" alt="facebook">
-					</a>
-					<a href="#" class="footer__icon-soc">
-						<img src="img/instagram.png" alt="instagram">
+					<div class="footer__icons-soc">
+						<a href="#" class="footer__icon-soc">
+							<img src="img/youtube.png" alt="youtube">
+						</a>
+						<a href="#" class="footer__icon-soc">
+							<img src="img/facebook.png" alt="facebook">
+						</a>
+						<a href="#" class="footer__icon-soc">
+							<img src="img/instagram.png" alt="instagram">
+						</a>
+					</div>
+					<a href="#" class="footer__logo-dev">
+						<span class="footer__logo-dev-text">Розроблено</span>
+						<img src="img/logo-dev.png" alt="logo-dev">
 					</a>
 				</div>
-				<a href="#" class="footer__logo-dev">
-					<span class="footer__logo-dev-text">Розроблено</span>
-					<img src="img/logo-dev.png" alt="logo-dev">
-				</a>
 			</div>
+			<!-- end footer -->
 		</div>
-		<!-- end footer -->
-	</div>
 
-	<script src="js/scripts.min.js"></script>
-	
-</body>
+		<script src="js/scripts.min.js"></script>
+		
+	</body>
 </html>
