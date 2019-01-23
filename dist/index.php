@@ -18,7 +18,7 @@
 
 <body>
 	<!-- begin block-top -->
-	<div class="block-top">
+	<div class="block-top js-scroll">
 		<div class="block-top__img">
 			<img src="img/logo-saga.svg" alt="logo">
 		</div>
@@ -47,7 +47,7 @@
 	<!-- end block-top -->
 
 	<!-- begin map -->
-	<div class="map-block">
+	<div class="map-block js-scroll">
 		<div id="map" class="map-block__img"></div>
 		<div class="map-block__button">
 			<div class="map-block__btn map-1 is-active">Київ</div>
@@ -57,11 +57,11 @@
 	<!-- end map -->
 
 	<!-- begin block -->
-	<div class="block" id="img1">
-		<div class="block__info info">
-			<h2 class="info__title title-lg-show"><span class="title-big">NEW YORK</span> Concept House</h2>
-			<h3 class="info__subtitle">АМЕРИКАНСЬКА ЯКІСТЬ. УКРАЇНСЬКА ЦІНА.</h3>
-			<div class="info__block">
+	<div class="block js-scroll" id="img1">
+		<div class="block__info info wow fadeInLeft" data-wow-duration="0.9s">
+			<h2 class="info__title title-lg-show wow fadeInLeft" data-wow-delay="0.2s"><span class="title-big">NEW YORK</span> Concept House</h2>
+			<h3 class="info__subtitle wow fadeInLeft" data-wow-delay="0.4s">АМЕРИКАНСЬКА ЯКІСТЬ. УКРАЇНСЬКА ЦІНА.</h3>
+			<div class="info__block wow fadeInLeft" data-wow-delay="0.6s">
 				<p>NEW YORK Concept House — це можливість дотримуватися американського стилю життя в самому центрі Києва.</p>
 				<ul>
 					<li>Унікальна архітектура</li>
@@ -84,12 +84,12 @@
 					Адреса: вул. Антоновича, 74, Голосіївський район
 			</div>	
 		</div>
-		<div class="block__img img-infra">
-			<div class="img-infra__text">введено в експлуатацію</div>
-			<div class="img-infra__location" data-popap-triger="map1">
+		<div class="block__img img-infra wow fadeInRight" data-wow-duration="0.9s">
+			<div class="img-infra__text wow fadeIn" data-wow-delay="0.7s">введено в експлуатацію</div>
+			<div class="img-infra__location wow fadeIn" data-wow-delay="0.7s" data-popap-triger="map1">
 				<img src="img/location-pin.png" alt="location">
 			</div>
-			<div class="img-infra__logo">
+			<div class="img-infra__logo wow fadeIn" data-wow-delay="0.7s">
 				<img src="img/new-york-logo.svg" alt="logo">
 			</div>
 			<div class="img-infra__images">
@@ -140,9 +140,9 @@
 						</div>
 					</div>
 					<div class="popap__close">
-						<a href="#" class="btn-close">
+						<span class="btn-close">
 							<img src="img/close.svg" alt="close">
-						</a>
+						</span>
 					</div>
 				</div>
 			</div>
@@ -161,9 +161,9 @@
 						<span class="popap-map__icon-text">ВІДКРИТИ В GOOGLE</span>
 					</a>
 					<div class="popap-map__close">
-						<a href="#" class="btn-close-map">
+						<span class="btn-close-map">
 							<img src="img/close.svg" alt="close">
-						</a>
+						</span>
 					</div>
 				</div>
 			</div>
@@ -173,11 +173,11 @@
 	<!-- end block -->
 
 	<!-- begin block -->
-	<div class="block block__reverse" id="img2">
-		<div class="block__info info">
-			<h2 class="info__title title-lg-show"><span class="title-big">NEW YORK</span> Concept House</h2>
-			<h3 class="info__subtitle">АМЕРИКАНСЬКА ЯКІСТЬ. УКРАЇНСЬКА ЦІНА.</h3>
-			<div class="info__block">
+	<div class="block block__reverse js-scroll" id="img2">
+		<div class="block__info info wow fadeInRight" data-wow-duration="0.9s">
+			<h2 class="info__title title-lg-show wow fadeInRight" data-wow-delay="0.2s"><span class="title-big">NEW YORK</span> Concept House</h2>
+			<h3 class="info__subtitle wow fadeInRight" data-wow-delay="0.4s">АМЕРИКАНСЬКА ЯКІСТЬ. УКРАЇНСЬКА ЦІНА.</h3>
+			<div class="info__block wow fadeInRight" data-wow-delay="0.6s">
 				<p>NEW YORK Concept House — це можливість дотримуватися американського стилю життя в самому центрі Києва.</p>
 				<ul>
 					<li>Унікальна архітектура</li>
@@ -200,12 +200,12 @@
 					Адреса: вул. Антоновича, 74, Голосіївський район
 			</div>	
 		</div>
-		<div class="block__img img-infra">
-			<div class="img-infra__text img-infra__text_reverse">введено в експлуатацію</div>
-			<div class="img-infra__location img-infra__location_reverse"  data-popap-triger="map2">
+		<div class="block__img img-infra wow fadeInLeft" data-wow-duration="0.9s">
+			<div class="img-infra__text img-infra__text_reverse wow fadeIn" data-wow-delay="0.7s">введено в експлуатацію</div>
+			<div class="img-infra__location img-infra__location_reverse wow fadeIn" data-wow-delay="0.7s"  data-popap-triger="map2">
 				<img src="img/location-pin.png" alt="location">
 			</div>
-			<div class="img-infra__logo img-infra__logo_reverse">
+			<div class="img-infra__logo img-infra__logo_reverse wow fadeIn" data-wow-delay="0.7s">
 				<img src="img/new-york-logo.png" alt="logo">
 			</div>
 			<div class="img-infra__images">
@@ -256,9 +256,9 @@
 						</div>
 					</div>
 					<div class="popap__close">
-						<a href="#" class="btn-close">
+						<span class="btn-close">
 							<img src="img/close.svg" alt="close">
-						</a>
+						</span>
 					</div>
 				</div>
 			</div>
@@ -277,9 +277,9 @@
 						<span class="popap-map__icon-text">ВІДКРИТИ В GOOGLE</span>
 					</a>
 					<div class="popap-map__close">
-						<a href="#" class="btn-close-map">
+						<span class="btn-close-map">
 							<img src="img/close.svg" alt="close">
-						</a>
+						</span>
 					</div>
 				</div>
 			</div>
@@ -289,7 +289,7 @@
 	<!-- end block -->
 
 	<!-- begin footer -->
-	<div class="footer">
+	<div class="footer js-scroll">
 		<div class="footer__inner">
 			<a href="#"" class="footer__logo">
 				<img src="img/saga.png" alt="logo">

@@ -76,13 +76,14 @@ gulp.task('js', function() {
 		// 'dist/libs/ion.rangeSlider/js/ion.rangeSlider.min.js',
 		'src/libs/jquery/dist/jquery.min.js',
 		'src/js/libs/scripts.min.js',
+		// 'src/js/libs/jquery.scrollify.js',
 		'src/js/libs/slick-carousel/slick/slick.min.js',
-		
+		'src/js/libs/wow.js',
 		// 'src/js/libs/ion.rangeSlider.js',
 		'src/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
-	.pipe(uglify()) // Mifify js (opt.)
+	// .pipe(uglify()) // Mifify js (opt.)
 	.pipe(gulp.dest('dist/js'))
 	.pipe(browserSync.reload({ stream: true }))
 });
