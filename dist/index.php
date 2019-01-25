@@ -58,7 +58,7 @@
 
 	<!-- begin block -->
 	<div class="block js-scroll" id="img1">
-		<div class="block__info info wow fadeInLeft" data-wow-duration="0.9s">
+		<div class="block__info info js-left">
 			<h2 class="info__title title-lg-show wow fadeInLeft" data-wow-delay="0.2s"><span class="title-big">NEW YORK</span> Concept House</h2>
 			<h3 class="info__subtitle wow fadeInLeft" data-wow-delay="0.4s">АМЕРИКАНСЬКА ЯКІСТЬ. УКРАЇНСЬКА ЦІНА.</h3>
 			<div class="info__block wow fadeInLeft" data-wow-delay="0.6s">
@@ -84,11 +84,11 @@
 					Адреса: вул. Антоновича, 74, Голосіївський район
 			</div>	
 		</div>
-		<div class="block__img img-infra wow fadeInRight" data-wow-duration="0.9s">
+		<div class="block__img img-infra js-right">
 			<div class="img-infra__text wow fadeIn" data-wow-delay="0.7s">введено в експлуатацію</div>
-			<div class="img-infra__location wow fadeIn" data-wow-delay="0.7s" data-popap-triger="map1">
+			<!-- <div class="img-infra__location wow fadeIn" data-wow-delay="0.7s" data-popap-triger="map1">
 				<img src="img/location-pin.png" alt="location">
-			</div>
+			</div> -->
 			<div class="img-infra__logo wow fadeIn" data-wow-delay="0.7s">
 				<img src="img/new-york-logo.svg" alt="logo">
 			</div>
@@ -97,9 +97,13 @@
 			</div>
 			
 			<div class="img-infra__button">
-				<div class="img-infra__location img-infra__location_reverse map-hide"  data-popap-triger="map1">
-					<img src="img/location-pin.png" alt="location">
+				<div class="btn"  data-popap-triger="map1">
+					<span class="btn__text xs-hide">Розташування Інфраструктура</span>
+					<img src="img/location-pin.png" alt="location" class="xs-show">
 				</div>
+				<!-- <div class="img-infra__location img-infra__location_reverse map-hide"  data-popap-triger="map1">
+					<img src="img/location-pin.png" alt="location">
+				</div> -->
 				<a href="#" class="btn">
 					<span class="btn__text xs-hide">ПЛАНУВАННЯ/ШАХМАТКА</span>
 					<img src="img/plan.png" alt="plan" class="xs-show">
@@ -174,7 +178,7 @@
 
 	<!-- begin block -->
 	<div class="block block__reverse js-scroll" id="img2">
-		<div class="block__info info wow fadeInRight" data-wow-duration="0.9s">
+		<div class="block__info info js-right">
 			<h2 class="info__title title-lg-show wow fadeInRight" data-wow-delay="0.2s"><span class="title-big">NEW YORK</span> Concept House</h2>
 			<h3 class="info__subtitle wow fadeInRight" data-wow-delay="0.4s">АМЕРИКАНСЬКА ЯКІСТЬ. УКРАЇНСЬКА ЦІНА.</h3>
 			<div class="info__block wow fadeInRight" data-wow-delay="0.6s">
@@ -200,11 +204,11 @@
 					Адреса: вул. Антоновича, 74, Голосіївський район
 			</div>	
 		</div>
-		<div class="block__img img-infra wow fadeInLeft" data-wow-duration="0.9s">
+		<div class="block__img img-infra js-left">
 			<div class="img-infra__text img-infra__text_reverse wow fadeIn" data-wow-delay="0.7s">введено в експлуатацію</div>
-			<div class="img-infra__location img-infra__location_reverse wow fadeIn" data-wow-delay="0.7s"  data-popap-triger="map2">
+			<!-- <div class="img-infra__location img-infra__location_reverse wow fadeIn" data-wow-delay="0.7s"  data-popap-triger="map2">
 				<img src="img/location-pin.png" alt="location">
-			</div>
+			</div> -->
 			<div class="img-infra__logo img-infra__logo_reverse wow fadeIn" data-wow-delay="0.7s">
 				<img src="img/new-york-logo.png" alt="logo">
 			</div>
@@ -213,9 +217,13 @@
 			</div>
 			
 			<div class="img-infra__button img-infra__button_reverse">
-				<div class="img-infra__location img-infra__location_reverse map-hide"  data-popap-triger="map2">
-					<img src="img/location-pin.png" alt="location">
+				<div class="btn"  data-popap-triger="map2">
+					<span class="btn__text xs-hide">Розташування Інфраструктура</span>
+					<img src="img/location-pin.png" alt="location" class="xs-show">
 				</div>
+				<!-- <div class="img-infra__location img-infra__location_reverse map-hide"  data-popap-triger="map2">
+					<img src="img/location-pin.png" alt="location">
+				</div> -->
 				<a href="#" class="btn">
 					<span class="btn__text xs-hide">ПЛАНУВАННЯ/ШАХМАТКА</span>
 					<img src="img/plan.png" alt="plan" class="xs-show">

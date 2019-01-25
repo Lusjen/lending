@@ -71,14 +71,18 @@ jQuery(document).ready(function($) {
         //анимируем переход на расстояние - top за 1000 мс
         $('body,html').animate({scrollTop: top}, 1000);
 	});
-	if($(window).width() < 1200)
-    {
-        $(".block__info").removeClass('wow fadeInLeft');
-        $(".block__info").removeClass('wow fadeInRight');
-        $(".block__img").removeClass('wow fadeInRight');
-        $(".block__img").removeClass('wow fadeInLeft');
-        $(".info__title").removeClass('wow fadeInLeft');
-        $(".info__title").removeClass('wow fadeInRight'); 
-    }
+	// if($(window).width() < 1200)
+ //    {
+ //        $(".block__info").removeClass('wow fadeInLeft');
+ //        $(".block__info").removeClass('wow fadeInRight');
+ //        $(".block__img").removeClass('wow fadeInRight');
+ //        $(".block__img").removeClass('wow fadeInLeft');
+ //        $(".info__title").removeClass('wow fadeInLeft');
+ //        $(".info__title").removeClass('wow fadeInRight'); 
+ //    }
+   if($(window).width() > 1200){
+		$(".js-left").addClass('wow fadeInLeft').attr('data-wow-duration', '0.9s');
+		$(".js-right").addClass('wow fadeInRight').attr('data-wow-duration', '0.9s');
+	}
 });
 
