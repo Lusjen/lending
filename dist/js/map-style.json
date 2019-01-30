@@ -58,7 +58,16 @@
         "elementType": "labels",
         "stylers": [
             {
-                "visibility": "off"
+                "visibility": "simplified"
+            },
+            {
+                "lightness": "-53"
+            },
+            {
+                "weight": "1.00"
+            },
+            {
+                "gamma": "0.98"
             }
         ]
     },
@@ -67,7 +76,7 @@
         "elementType": "labels.icon",
         "stylers": [
             {
-                "visibility": "simplified"
+                "visibility": "off"
             }
         ]
     },
